@@ -1,0 +1,23 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'db/**/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent

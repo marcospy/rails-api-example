@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Example' do
+RSpec.describe 'Example' do # rubocop:disable DescribeClass
   describe 'spec' do
     let(:username) { FFaker::Name.name }
     let!(:user) { build(:simple_stub, name: username) }

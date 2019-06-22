@@ -69,11 +69,10 @@ group :development, :test do
   # Dev tools
   gem 'annotate' # TODO: configurar, testar
   gem 'awesome_print'
-  gem 'bundler-audit'
   gem 'bullet'
+  gem 'bundler-audit'
   gem 'pry-rails'
   gem 'strong_migrations'
-
 
   # Tests/specs
   gem 'factory_bot_rails'
@@ -83,12 +82,11 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
 
-
   # Code quality
-  gem 'brakeman' # TODO: configurar, testar
-  gem 'rubocop' # TODO: configurar
-  gem 'rubocop-performance' # TODO: configurar, testar
-  gem 'rubocop-rspec' # TODO: configurar, testar
+  gem 'brakeman'
+  gem 'rubocop'
+  gem 'rubocop-performance'
+  gem 'rubocop-rspec'
 end
 
 group :development do
@@ -100,4 +98,4 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
