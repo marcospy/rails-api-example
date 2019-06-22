@@ -1,0 +1,11 @@
+FROM ruby:2.6-alpine
+
+# Labels
+LABEL maintainer="costa.marcos.pro@gmail.com"
+
+# Install system deps
+RUN apk add --update --no-cache build-base postgresql-dev tzdata
+
+WORKDIR /app
+
+EXPOSE 3000

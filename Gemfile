@@ -25,7 +25,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-gem 'rack-cors'
+# gem 'rack-cors'
 
 # Configuration/Settings
 gem 'config' # TODO: configurar
@@ -34,11 +34,11 @@ gem 'config' # TODO: configurar
 gem 'oj'
 
 # Pagination
-gem 'kaminari'
+# gem 'kaminari'
 
 # Feature toggling
-gem 'flipper'
-gem 'flipper-rails'
+# gem 'flipper'
+# gem 'flipper-rails'
 
 # Background and scheduled jobs
 gem 'sidekiq' # TODO: configurar
@@ -46,24 +46,24 @@ gem 'sidekiq-cron' # TODO: configurar, testar
 gem 'sidekiq-limit_fetch' # TODO: configurar
 
 # Role based permissioning
-gem 'cancancan' # TODO: configurar
+# gem 'cancancan' # TODO: configurar
 
 # Authentication
-gem 'devise' # TODO: configurar
-gem 'devise-jwt' # TODO: configurar, testar
+# gem 'devise' # TODO: configurar
+# gem 'devise-jwt' # TODO: configurar, testar
 
 # Currency
-gem 'money-rails', '~> 1.12' # TODO: configurar, testar
+# gem 'money-rails', '~> 1.12' # TODO: configurar, testar
 
 # JSON formatted logging
-gem 'logging-rails', require: 'logging/rails'
-gem 'lograge'
+# gem 'logging-rails', require: 'logging/rails'
+# gem 'lograge'
 
 # Bug tracking
-gem 'rollbar'
+# gem 'rollbar'
 
 # Admin
-gem 'administrate' # TODO: configurar, testar
+# gem 'administrate' # TODO: configurar, testar
 
 group :development, :test do
   # Dev tools
@@ -87,7 +87,6 @@ group :development, :test do
 
   # Code quality
   gem 'brakeman' # TODO: configurar, testar
-  gem 'overcommit' # TODO: configurar, testar
   gem 'rubocop' # TODO: configurar
   gem 'rubocop-performance' # TODO: configurar, testar
   gem 'rubocop-rspec' # TODO: configurar, testar
