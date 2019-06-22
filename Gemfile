@@ -81,7 +81,7 @@ group :development, :test do
   gem 'parallel_tests' # TODO: configurar, testar
   gem 'rspec-rails', '~> 3'
   gem 'shoulda-matchers'
-  gem 'simplecov' # TODO: configurar
+  gem 'simplecov', require: false
 
 
   # Code quality
