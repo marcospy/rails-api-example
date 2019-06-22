@@ -68,20 +68,19 @@ gem 'sidekiq-limit_fetch' # TODO: configurar
 group :development, :test do
   # Dev tools
   gem 'annotate' # TODO: configurar, testar
-  gem 'awesome_print' # TODO: configurar, testar
+  gem 'awesome_print'
   gem 'bundler-audit'
   gem 'bullet'
-  gem 'dotenv-rails'
   gem 'pry-rails'
   gem 'strong_migrations'
 
 
   # Tests/specs
-  gem 'factory_bot_rails' # TODO: configurar
-  gem 'ffaker' # TODO: configurar
+  gem 'factory_bot_rails'
+  gem 'ffaker'
   gem 'parallel_tests' # TODO: configurar, testar
-  gem 'rspec' # TODO: configurar
-  gem 'shoulda-matchers' # TODO: configurar
+  gem 'rspec-rails', '~> 3'
+  gem 'shoulda-matchers'
   gem 'simplecov' # TODO: configurar
 
 
