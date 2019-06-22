@@ -78,7 +78,7 @@ group :development, :test do
   # Tests/specs
   gem 'factory_bot_rails'
   gem 'ffaker'
-  gem 'parallel_tests' # TODO: configurar, testar
+  gem 'parallel_tests'
   gem 'rspec-rails', '~> 3'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
