@@ -84,7 +84,6 @@ group :development, :test do
 
   # Code quality
   gem 'brakeman'
-  gem 'overcommit'
   gem 'rubocop'
   gem 'rubocop-performance'
   gem 'rubocop-rspec'
