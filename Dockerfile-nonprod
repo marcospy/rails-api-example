@@ -4,7 +4,11 @@ FROM ruby:2.6-alpine
 LABEL maintainer="costa.marcos.pro@gmail.com"
 
 # Install system deps
-RUN apk add --update --no-cache build-base postgresql-dev tzdata
+RUN apk add --update --no-cache \
+  build-base \
+  postgresql-dev \
+  tzdata \
+  less
 
 WORKDIR /app
 

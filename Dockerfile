@@ -18,17 +18,21 @@ ADD . /app
 
 
 # Final stage
-FROM ruby:alpine
+FROM ruby:2.6-alpine
 
 # Labels
 LABEL maintainer="costa.marcos.pro@gmail.com"
 
 # Install system deps
-RUN apk add --update --no-cache build-base postgresql-dev
+RUN apk add --update --no-cache postgresql-dev tzdata
+
+# Setup user
+RUN addgroup -g 1000 -S app && adduser -u 1000 -S app -G app
+USER app
 
 # Copy app files and gems from base
 COPY --from=base /usr/local/bundle/ /usr/local/bundle/
-COPY --from=base /app /app
+COPY --from=base --chown=app:app /app /app
 
 # Env vars
 ENV RAILS_ENV production
@@ -37,6 +41,4 @@ WORKDIR /app
 
 EXPOSE 3000
 
-ENTRYPOINT ["bundle", "exec"]
-
-CMD ["rails", "server"]
+CMD ["bundle", "exec", "rails", "server"]
