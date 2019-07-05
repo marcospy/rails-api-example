@@ -41,4 +41,4 @@ WORKDIR /app
 
 EXPOSE 3000
 
-CMD ["bundle", "exec", "rails", "server"]
+CMD ["bundle", "exec", "rails", "server", "--binding", "0.0.0.0"]
